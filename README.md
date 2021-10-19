@@ -1,6 +1,27 @@
+# training-patron-BFF
+
+Implementar el patrón BFF (desde kata-crud-refactoring)
+
+### Front
+
+    cd front
+    npm install
+    npm start
+
+### Back
+
+    cd back
+    mvn compile
+    mvn spring-boot:run
+
+### Server-bff
+
+    cd server-bff
+    npm run dev
+
 # [Problema]
 
-Pueden ver los siguientes videos para poder comprender la base del código fuente dentro de este repositorio. 
+Pueden ver los siguientes videos para poder comprender la base del código fuente dentro de este repositorio.
 
 https://www.youtube.com/watch?v=vqWvGgx_iXY&list=PL0IrPQPrkqoEUDXn1nsjzxSX2zflWtJW-
 
@@ -10,25 +31,25 @@ En el siguiente proyecto se presenta algunos conceptos de Full Stack, trabajando
 
 ### Caso de Uso
 
-Se tiene presente un formulario donde se registra unas tareas basadas en una lista por hacer. Esta lista se crea para poder tener una grupos de items donde se pueda gestionar un CRUD. Se tiene un diseño muy básico pero totalmente funcional. 
+Se tiene presente un formulario donde se registra unas tareas basadas en una lista por hacer. Esta lista se crea para poder tener una grupos de items donde se pueda gestionar un CRUD. Se tiene un diseño muy básico pero totalmente funcional.
 
 #### Demo
 
-![alt text]( ./demo.gif "Demo funcional del ToDo")
- 
+![alt text](./demo.gif "Demo funcional del ToDo")
+
 ### Instalación
 
-![alt text]( ./start.gif "Instalación y puesta en marcha")
+![alt text](./start.gif "Instalación y puesta en marcha")
 
 ### Perspectiva Front-end
-Se tiene un archivo con toda la lógica, se presentan algunas malas prácticas en la codificación del mismo. Se debe refactorizar en donde se separe los componentes en archivos y se representen una mejor estructura. 
+
+Se tiene un archivo con toda la lógica, se presentan algunas malas prácticas en la codificación del mismo. Se debe refactorizar en donde se separe los componentes en archivos y se representen una mejor estructura.
 
 Aplicar las mejores prácticas y buscar el mejor diseño para presentar los datos.
 
-
 ### Perspectiva Back-end
 
-Dentro del back-end no se tiene una base de datos basada en servidor. Se debe aplicar un buen diseño de modelo entidad relación y aplicar una base de datos como servidor, ejemplo MySQL. Representar un objeto de trasporte de datos (DTO) en vez de usar la misma entidad para responder. 
+Dentro del back-end no se tiene una base de datos basada en servidor. Se debe aplicar un buen diseño de modelo entidad relación y aplicar una base de datos como servidor, ejemplo MySQL. Representar un objeto de trasporte de datos (DTO) en vez de usar la misma entidad para responder.
 
 ### Issues
 
@@ -41,9 +62,8 @@ Dentro del back-end no se tiene una base de datos basada en servidor. Se debe ap
 
 ## Reto
 
-Hacer un fork en su propio namespace y presentar la solución más valida para ser discutida, argumentar los aspectos de mejora y aplicar algunas técnica de refactorización. Resolverlo de forma individual, aplicar los commit para cada paso que se realice en la refactorización. 
+Hacer un fork en su propio namespace y presentar la solución más valida para ser discutida, argumentar los aspectos de mejora y aplicar algunas técnica de refactorización. Resolverlo de forma individual, aplicar los commit para cada paso que se realice en la refactorización.
 
 Realizar la siguiente representación donde se tiene TO-Do List agripado en listas.
 
-![alt text]( ./todo-list-kata.gif "Demo funcional del ToDo List")
-
+![alt text](./todo-list-kata.gif "Demo funcional del ToDo List")
