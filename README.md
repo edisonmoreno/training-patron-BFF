@@ -2,7 +2,7 @@
 
 Implementar el patrón BFF (desde kata-crud-refactoring)
 
--   Nota: El reto mencionado en este repositorio no se desarolla.
+-   Nota: La "KATA Full Stack" mencionada en este repositorio no se desarolla, solo se implementa Pattern BFF.
 
 # Descripción
 
