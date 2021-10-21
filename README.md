@@ -2,22 +2,48 @@
 
 Implementar el patrón BFF (desde kata-crud-refactoring)
 
-### Front
+-   Nota: El reto mencionado en este repositorio no se desarolla.
 
-    cd front
-    npm install
-    npm start
+# Descripción
 
-### Back
+Se utiliza este repositorio para constuir una arquitectura con el patrón BFF.
+
+El "Backend" con Spring Boot expone unas API, estas son consumidas por "Server-bff" desarrollado con Express en node.js, el "Frontend" en react consume estas API, y no las que expone el "Backend".
+
+# Ejecución
+
+## Backend
 
     cd back
     mvn compile
     mvn spring-boot:run
 
-### Server-bff
+_API expuestas_
+
+-   [Get] api/todos
+-   [Post] api/todo
+-   [Put] api/todo
+-   [Delete] api/{id}/todo
+-   [Get] api/{id}/todo
+
+## Server-bff
 
     cd server-bff
-    npm run dev
+    node app.js
+
+_API expuestas DFF_
+
+-   [Get] api-bff/todos
+-   [Post] api-bff/todo
+-   [Put] api-bff/todo
+-   [Delete] api-bff/{id}/todo
+-   [Get] api-bff/{id}/todo
+
+## Frontend
+
+    cd front
+    npm install
+    npm start
 
 # [Problema]
 
@@ -53,12 +79,12 @@ Dentro del back-end no se tiene una base de datos basada en servidor. Se debe ap
 
 ### Issues
 
-- Resolver el diseño gráfico
-- Separar bien los elementos gráficos como componentes, store, reducer y providers.
-- La base de datos debe esta en un servidor como MySQL.
-- Aplicar reglas para no guardar elementos vácios.
-- Validar carácteres y demás para guardar las entidades de los TO-DO.
-- Trabajar con un objeto de trasporte de datos o un objeto plano para representa los datos ante la API.
+-   Resolver el diseño gráfico
+-   Separar bien los elementos gráficos como componentes, store, reducer y providers.
+-   La base de datos debe esta en un servidor como MySQL.
+-   Aplicar reglas para no guardar elementos vácios.
+-   Validar carácteres y demás para guardar las entidades de los TO-DO.
+-   Trabajar con un objeto de trasporte de datos o un objeto plano para representa los datos ante la API.
 
 ## Reto
 
